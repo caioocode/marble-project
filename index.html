@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qualitá Group</title>
 
     <link rel="stylesheet" href="estilo/estilo.css">
 
-</head>
+  </head>
 
-<body>
-  <header>
-    <p>IMAGEM de FUNDO</p>
-  </header>
-
-  <nav class="nav">
-    <a href="#">STONES</a>
-    <a href="#">CATALOGS</a>
-    <a href="#">ABOUT US</a>
-    <a href="#">CONTACT</a>
-  </nav>
-
-  <main>
-    <div class="releases">
-      <h1>Releases</h1>
-      <h2>S T O N E S</h2>
-
-      <div class="amostras">
-        <div class="amostra1">amostra 1</div>
-        <div class="amostra2">amostra 2</div>
-        <div class="amostra3">amostra 3</div>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Logo</h1>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#home">STONES</a></li>
+          <li><a href="#services">CATALOGS</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="preloader" id="preloader">
+      <div class="stripe stripe1"></div>
+      <div class="stripe stripe2"></div>
+      <div class="stripe stripe3"></div>
+      <div class="stripe stripe4"></div>
+      <div class="stripe stripe5"></div>
     </div>
+
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h2>
+          The natural beauty of <br />
+          Brazilian stones to the world
+        </h2>
+        <a href="#contact" class="cta-button">LET'S TALK</a>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <h1>Releases</h1>
+      <h2>STONES</h2>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>DOLOMITIC MARBLE</h3>
+          <h1>Alba Pietra</h1>
+        </div>
+
+        <div class="service-item">
+          <h3>GRANITE</h3>
+          <h1>Bariloche</h1>
+        </div>
+
+        <div class="service-item">
+          <h3>QUARTZITE</h3>
+          <h1>Poseidon</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+      <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
     
-    <div class="catalogo"> 
-      <h1>See what we can do together.</h1>
-    </div>
-  
-  <div class="contato">
-    Contato
-  </div>
-  
-  </main>
-
-  <footer>
-    <p>endereço e logo</p>
-  </footer>
-
-</body>
-
+  </body>
 </html>
