@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     overflow: hidden; /* Oculta o conteúdo até que o preloader desapareça */
-    background-color: darkgrey;
+    background-color: #EEF0F6;
 }
 
 header {
@@ -88,6 +88,7 @@ nav ul li a {
     background-size: cover; /* Ajusta a imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed;
     color: #fff;
     padding: 100px 30px;
     text-align: center;
@@ -149,15 +150,15 @@ nav ul li a {
     margin: auto;
     margin-top: 80px;
     margin-bottom: 60px;
-    background-color: #0003;
+    background-color: white;
     text-align: center;
     width: 1280px;
 }
 
-.services-section h1 {
+/* .services-section h1 {
     font-size:2em;
-    line-height:5px;
-}
+    line-height:2px;
+} */
 
 .services-grid {
     display: grid;
@@ -166,17 +167,39 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #ffe8;
-    height: 700px;
+    background-color: white;
+    height: 500px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.service-item h3 {
+/* .service-item h3 {
   line-height:10px;
+} */
+
+.service-section .title {
+    color: aqua;
 }
 
+.services-grid #amostra1 {
+    background-image: url('../imagens/ALBA\ PIETRA.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+.services-grid #amostra2 {
+    background-image: url('../imagens/BARILOCHE\ CHAPA\ CATALOGO.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+.services-grid #amostra3 {
+    background-image: url('../imagens/FOTO\ POSEIDON.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
 
 /* RODAPÉ  */
 footer {
