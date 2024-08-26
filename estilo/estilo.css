@@ -155,10 +155,6 @@ nav ul li a {
     width: 1280px;
 }
 
-/* .services-section h1 {
-    font-size:2em;
-    line-height:2px;
-} */
 
 .services-grid {
     display: grid;
@@ -174,12 +170,14 @@ nav ul li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* .service-item h3 {
-  line-height:10px;
-} */
+.services-grid .service-item {
+    color: black;
+    line-height: 2px;
+    text-align: left;
+}
 
 .service-section .title {
-    color: aqua;
+    display: flex;
 }
 
 .services-grid #amostra1 {
