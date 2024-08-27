@@ -25,6 +25,10 @@ header {
     top: 20px;
 }
 
+
+
+
+/* --------- MENU DA PÁGINA --------- */
 nav ul {
     font-family: "Monteserrat", sans-serif;
     font-weight: 300;
@@ -44,16 +48,17 @@ nav ul li a {
     text-decoration: none;
     font-weight: bolder;
 }
+/* ------------------------------------ */
 
 
 
 
-/* LOGOTIPO */
+/* ------------LOGOTIPO-----------------*/
 
 .logo img {
     height: 50px;
 }
-
+/* ------------------------------------- */
 
 
 
@@ -152,18 +157,34 @@ nav ul li a {
 
 /* --------------------------------------------- */
 
+/* MENU - PEDRAS */
+.menu-stones {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 70px;
+}
 
+.menu-stones .stones-bar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px 20px;
+    display: flex;
+}
+
+
+/* ------------- */
 
 
 /* Seção de lançamentos - pedras */
 .services-section {
     padding: 10px 30px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 60px;
     background-color: white;
     text-align: center;
-    width: 1280px;
+    width: 100vw;
     height: 720px;
 }
 
@@ -189,19 +210,19 @@ nav ul li a {
 }
 
 .service-item .service-text1 {
-    line-height: 1px;
+    line-height: 3px;
     position: relative;
     top: 540px;
 }
 
 .service-item .service-text2 {
-    line-height: 1px;
+    line-height: 3px;
     position: relative;
     top: 540px;
 }
 
 .service-item .service-text3 {
-    line-height: 1px;
+    line-height: 3px;
     position: relative;
     top: 540px;
 }
@@ -216,6 +237,11 @@ nav ul li a {
     font-size: 2em;
  }
 
+ .services-section .title .paragraph p {
+    letter-spacing: 2px;
+    font-weight: 200;
+ }
+/* ------------------------------------------------ */
 
 
 
@@ -245,12 +271,7 @@ nav ul li a {
 
 
 
-
- .services-section .title .paragraph p {
-    letter-spacing: 2px;
-    font-weight: 300;
- }
-
+/* GRID */
 .services-grid #amostra1 {
     background-image: url('../imagens/ALBA\ PIETRA.png');
     background-size: cover; /* Ajusta a imagem para cobrir toda a div */
@@ -269,7 +290,7 @@ nav ul li a {
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
 }
-
+/* ---------------------- */
 
 
 
@@ -277,17 +298,25 @@ nav ul li a {
 
 .catalog-view {
     background-color: #ffffff;
-    width: 1340px;
+    width: 100vw;
     height: 300px;
     margin: auto;
+    margin-bottom: 30px;
     padding-bottom: 100px;
 }
+/* ----------------------------- */
 
 
 
 
 /* BANNER CONTATO */
-
+.contact-area {
+background-color: #ffffff;
+width: 100vw;
+height: 300px;
+margin: auto;
+padding-bottom: 100px;
+}
 /* ------------------------------------------------ */
 
 
