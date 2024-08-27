@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 /* Preloader */
-.preloader {
+/* .preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@ nav ul li a {
     height: 100%;
     display: flex;
     z-index: 1000;
-}
+} */
 
 .stripe {
     width: 20%;
@@ -86,7 +86,7 @@ nav ul li a {
 .hero-section {
     background-image: url('https://i.imgur.com/IACFmWc.jpeg'); /* Link direto da imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem */
+    background-position: bottom; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-attachment: fixed;
     color: #fff;
@@ -153,6 +153,7 @@ nav ul li a {
     background-color: white;
     text-align: center;
     width: 1280px;
+    height: 720px;
 }
 
 
@@ -171,14 +172,44 @@ nav ul li a {
 }
 
 .services-grid .service-item {
-    color: black;
+    color: rgb(0, 0, 0);
     line-height: 2px;
     text-align: left;
+    
 }
 
-.service-section .title {
-    display: flex;
+.service-item .service-text1 {
+    line-height: 1px;
+    position: relative;
+    top: 530px;
 }
+
+.service-item .service-text2 {
+    line-height: 1px;
+    position: relative;
+    top: 530px;
+}
+
+.service-item .service-text3 {
+    line-height: 1px;
+    position: relative;
+    top: 530px;
+}
+
+.services-section .title .paragraph {
+   color: black;
+   line-height: 2px;
+}
+
+.services-section .title .paragraph h1 {
+    font-weight: 500;
+    font-size: 2em;
+ }
+
+ .services-section .title .paragraph p {
+    letter-spacing: 2px;
+    font-weight: 300;
+ }
 
 .services-grid #amostra1 {
     background-image: url('../imagens/ALBA\ PIETRA.png');
