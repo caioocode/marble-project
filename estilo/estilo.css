@@ -631,17 +631,23 @@ footer {
 }
 /* MEDIA QUERYE */
 
+
+/* Ajustes para telas médias */
+/* MEDIA QUERYE */
+
 /* Ajustes para telas pequenas */
 @media (max-width: 768px) {
     header {
+        width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        padding: 10px;
+        padding: 40px;
     }
 
 
     nav ul {
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -650,28 +656,71 @@ footer {
         margin-bottom: 10px;
     }
 
+    nav ul li a {
+        padding-left: 20px;
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: -90px;
+    }
+
+    .logo img {
+        display: flex;
+        position: relative;
+        left: 200px;
+        top: -10px;
+    }
+
+    .menu-stones {
+        width: 100%;
+        display: flex;
+    }
+
     .menu-stones .stones-bar {
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
         align-items: center;
     }
 
     .menu-stones .stones-bar a {
         width: 80%;
         margin: 10px 0;
+        top:100px;
     }
 
     .hero-section {
+        width: 100%;
         padding: 50px 15px;
-        height: auto;
+        height: 1280px;
     }
 
     .hero-section .hero-content {
+        width: 100%;
         font-size: 1.5em;
         left: 0;
-        top: 0;
+        top: 750px;
         padding: 20px;
     }
 
+    .services-section .title {
+        display:flex;
+        position:relative;
+        top:100px;
+        left:260px;
+    }
+
+    .services-grid {
+        position: relative;
+        max-width: 100%;
+        top: -60px;
+    }
+
+    .services-grid .video-background {
+        position: absolute;
+        height: 210px;
+        
+    }
+    
     .catalog-text h1,
     .catalog-text p {
         left: 0;
@@ -694,54 +743,6 @@ footer {
 
 }
 
-/* Ajustes para telas médias */
-@media (min-width: 769px) and (max-width: 1024px) {
-    header {
-        left: 75%;
-        transform: translateX(-75%);
-        padding: 10px 20px;
-    }
-
-    nav ul {
-        justify-content: center;
-    }
-
-    nav ul li {
-        margin-left: 30px;
-    }
-
-    .menu-stones .stones-bar a {
-        width: 150px;
-    }
-
-    .hero-section {
-        padding: 75px 20px;
-        height: auto;
-    }
-
-    .hero-section .hero-content {
-        font-size: 1.8em;
-    }
-
-    .catalog-text h1,
-    .catalog-text p {
-        text-align: center;
-        padding: 0 30px;
-    }
-
-    .catalog-button {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-area {
-        padding: 30px;
-    }
-}
 
 /* Ajustes para telas grandes */
 @media (min-width: 1025px) {
