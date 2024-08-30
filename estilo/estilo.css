@@ -34,6 +34,7 @@ header {
     top: 0; /* Posiciona no topo da página */
     position: fixed; /* Para manter o menu fixo no topo */  
     z-index: 1000; /* Para garantir que fique acima de outros elementos */  
+    
 
 }
 
@@ -350,20 +351,20 @@ nav ul li a {
 
  .services-grid {  
     position: relative;  
-    width: 2544px;  
-    height: 1250px; /* Altura da div */  
     overflow: hidden;  
+    width: 100%;  
+    height: 100vh;
+    z-index: 1;
 }  
 
 .video-background {  
     position: absolute;  
-    top: 29%;  
-    left: 50%;  
     min-width: 100%;  
-    width: 100vw;  
-    height: 680px;  
-    z-index: 1; /* Coloca o vídeo atrás do conteúdo */  
-    transform: translate(-50%, -50%);  
+    width: 160%;  
+    /* height: 100%;  n precisou usar */
+    object-fit: contain;  
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */  
+    transform: translate(-50%, -24%);  
 }  
 
 .content {  
@@ -616,8 +617,24 @@ footer {
     margin-top:100px;
     width: 100%;
     bottom: 0;
+
+    position: relative;
 }
 
+footer p {
+    text-align: left;
+    padding-left: 60px;
+}
+
+footer .footer-logo {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 1020px;
+
+    width: 100px;
+    height: 100px;
+}
 
 @keyframes fadeInUp {
     from {
@@ -632,7 +649,15 @@ footer {
 /* MEDIA QUERYE */
 
 
-/* Ajustes para telas médias */
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERYE */
 
 /* Ajustes para telas pequenas */
@@ -710,14 +735,13 @@ footer {
     }
 
     .services-grid {
-        position: relative;
-        max-width: 100%;
-        top: -60px;
+            height: 50vh; /* Metade da altura da viewport */
+        }
     }
 
     .services-grid .video-background {
         position: absolute;
-        height: 210px;
+        height: 100vh;
         
     }
     
@@ -741,7 +765,14 @@ footer {
         padding: 20px;
     }
 
-}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+        .services-grid {
+            height: 100vh; /* 75% da altura da viewport */
+        }
+    }
+    
 
 
 /* Ajustes para telas grandes */
@@ -759,6 +790,11 @@ footer {
         left: 900px;
         transform: translateX(0);
     }
+
+    .services-grid {
+        height: 50vh; /* Altura total da viewport */
+    }
+
 }
 
 

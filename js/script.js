@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500); // Ajuste o tempo conforme necessário
     });
   });
+
