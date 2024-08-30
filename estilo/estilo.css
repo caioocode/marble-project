@@ -547,6 +547,7 @@ nav ul li a {
     color: #ffffff;
     font-size: 5em;
     font-weight: 300;
+    text-shadow: #000;
 }
 
 form {
